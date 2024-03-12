@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.home-image {
+		@apply fixed top-0 right-0 -z-10 h-full w-2/5 object-cover object-right-bottom transition-opacity duration-100;
+	}
+}
