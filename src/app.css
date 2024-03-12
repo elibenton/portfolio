@@ -2,8 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'timezone-italic';
+	src: url('/hal-fonts/hal-timezone-italic.otf') format('opentype');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'timezone-regular';
+	src: url('/hal-fonts/hal-timezone-regular.otf') format('opentype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'timezone-monospace';
+	src: url('/hal-fonts/hal-timezone-monospace.otf') format('opentype');
+	font-style: monospace;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'sohn-buch';
+	src: url('/klim-fonts/sohne-buch.otf') format('opentype');
+	font-weight: normal;
+}
+
 @layer components {
 	.home-image {
-		@apply fixed top-0 right-0 -z-10 h-full w-2/5 object-cover object-right-bottom transition-opacity duration-100;
+		@apply fixed top-0 right-0 -z-10 h-full w-2/5 object-cover object-bottom transition-opacity duration-100;
 	}
 }
