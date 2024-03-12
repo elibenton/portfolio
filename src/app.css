@@ -33,4 +33,12 @@
 	.home-image {
 		@apply fixed top-0 right-0 -z-10 h-full w-2/5 object-cover object-bottom transition-opacity duration-100;
 	}
+
+	.home-card {
+		@apply relative pb-6 pt-4 px-3 border-t border-black -mx-4 -mb-14 hover:-translate-y-10 flex justify-between bg-slate-100 transition-all duration-300 ease-in-out cursor-pointer;
+	}
+
+	.layered-image {
+		@apply relative max-w-64 sm:w-36 sm:h-36 m-2 self-center sm:self-start cursor-pointer;
+	}
 }

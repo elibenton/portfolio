@@ -13,6 +13,9 @@ export default {
 				],
 				sohn: ['sohn-buch', 'ui-sans-serif']
 			},
+			transitionProperty: {
+				spacing: 'margin, padding'
+			},
 			keyframes: {
 				rotate: {
 					from: {

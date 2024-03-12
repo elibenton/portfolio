@@ -1,90 +1,82 @@
 <script>
 	import TextSpinner from '../components/textSpinner.svelte';
+	import jobs from '$lib/jobs.json';
 
 	let colors = {
-		production: 'bg-yellow-300',
-		reporting: 'bg-red-400',
-		photography: 'bg-blue-500',
-		code: 'bg-green-500'
+		producer: 'bg-yellow-300',
+		reporter: 'bg-red-400',
+		photographer: 'bg-blue-500',
+		developer: 'bg-green-500'
 	};
 
-	let jobs = [
-		{
-			name: 'The New York Times',
-			roles: ['production'],
-			year: '2023',
-			location: 'New York City, NY'
-		},
-		{
-			name: 'The New Yorker',
-			roles: ['production'],
-			year: '2022 -> 2023',
-			location: 'New York City, NY'
-		},
-		{
-			name: 'Radiolab',
-			roles: ['production', 'reporting'],
-			year: '2021 -> 2023',
-			location: 'Kazakhstan'
-		},
-		{
-			name: 'Mars College',
-			roles: ['photography'],
-			year: '2022',
-			location: 'Bombay Beach, CA'
-		},
-		// // {
-		// // 	name: 'Betteridge Bot',
-		// // 	roles: ['code'],
-		// // 	year: '2024',
-		// // 	location: 'Berkeley, CA.'
-		// // },
-		{
-			name: 'Watson Fellowship',
-			roles: ['reporting', 'photography'],
-			year: '2019 -> 2020',
-			location: ['India, Myanmar']
-		}
-	];
-
 	let hoverStates = {}; // Object to track hover states
-
-	$: console.log(hoverStates['The New York Times']?.active);
+	let clickedTab = '';
 
 	function handleMouseEnter(name) {
+		clickedTab = '';
 		hoverStates[name] = { active: true };
 	}
 
 	function handleMouseLeave(name) {
 		hoverStates[name] = { active: false };
 	}
+
+	function handleClick(name) {
+		clickedTab = name;
+	}
+
+	function handleFocus(name) {
+		clickedTab = name;
+	}
 </script>
 
 <div class="flex">
 	<div
-		class="p-2 sm:p-4 flex flex-col justify-between h-[96vh] w-full bg-white lg:w-3/5 shrink-0">
-		<img
-			src="/ELI.webp"
-			alt="Eli written in squiggly ink"
-			class="max-w-64 sm:w-48 sm:h-48 m-4 self-center sm:self-start" />
+		class="p-2 sm:p-4 flex flex-col justify-between h-[96vh] w-full bg-slate-100 lg:w-3/5 shrink-0 z-10">
+		<a
+			href="/"
+			class="layered-image group *:transition-transform *:duration-200 :*ease-in-out">
+			<img
+				src="/E.webp"
+				alt="Eli written in squiggly ink"
+				class="absolute top-0 left-0 group-hover:-rotate-6 group-hover:-translate-y-1" />
+			<img
+				src="/L.webp"
+				alt="Eli written in squiggly ink"
+				class="absolute top-0 left-0 group-hover:rotate-2 group-hover:-translate-y-2" />
+			<img
+				src="/I.webp"
+				alt="Eli written in squiggly ink"
+				class="absolute top-0 left-0 group-hover:rotate-6 group-hover:translate-y-0.5" />
+		</a>
 		<ul class="translate-y-10">
 			{#each jobs as { name, roles, year, location }}
 				<li
-					class={`relative pb-6 pt-3 px-3 border-t border-black -mx-4 -mb-[3.65rem] hover:-translate-y-10 flex justify-between bg-white transition-transform duration-100 ease-in-out`}
+					class="home-card"
 					on:mouseenter={() => handleMouseEnter(name)}
-					on:mouseleave={() => handleMouseLeave(name)}>
+					on:mouseleave={() => handleMouseLeave(name)}
+					on:click={() => handleClick(name)}
+					on:focus={() => handleFocus(name)}>
 					<div>
 						<h1
 							class="text-2xl md:text-4xl lg:text-5xl font-medium font-sohn relative">
-							{name.toUpperCase()}
+							{name}
 						</h1>
 						<span class="font-mono text-sm relative p-1">
 							{year} &bull; {location instanceof Array
 								? location.join(', ')
 								: location}
 						</span>
+						<div
+							class={`${clickedTab === name ? 'flex' : 'hidden'} p-1 w-2/3 transition-all`}>
+							I'm baby narwhal prism DSA biodiesel marfa sartorial tofu,
+							stumptown raw denim tbh fashion axe cold-pressed lyft. Narwhal
+							fanny pack williamsburg sriracha blog, twee ennui DIY.
+							Dreamcatcher cliche chicharrones la croix tonx yuccie sus wolf
+							bodega boys hell of ethical try-hard post-ironic. Squid
+						</div>
 					</div>
-					<div class="hidden lg:block space-x-2 transform -translate-y-6">
+					<div class="hidden lg:block space-x-2">
 						{#each roles as role}
 							<span
 								class={`text-sm border border-black font-mono ${colors[role]} rounded-full h-full py-1 px-2`}>
@@ -99,7 +91,7 @@
 	<div class="hidden md:block border-l border-black">
 		<img
 			class="home-image"
-			src="/eli.jpg"
+			src="/eli-new.jpg"
 			alt="Eli Cohen in the desert holding a microphone" />
 		<img
 			class={`home-image ${hoverStates['The New York Times']?.active ? 'opacity-100' : 'opacity-0'}`}
@@ -123,3 +115,7 @@
 			alt="Men hanging out of an open air train in Mumbai." />
 	</div>
 </div>
+<!-- <p class="fixed top-0 left-6 z-10">About Contact</p> -->
+<p class="fixed top-20 -left-16 z-10 transform rotate-[270deg]">
+	About Contact Source
+</p>

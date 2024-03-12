@@ -1,0 +1,39 @@
+[
+	{
+		"name": "The New York Times",
+		"roles": ["producer"],
+		"year": "2023",
+		"location": "New York City, NY"
+	},
+	{
+		"name": "Radiolab",
+		"roles": ["reporter", "producer"],
+		"year": "2020 -> 2023",
+		"location": "Kazakhstan"
+	},
+	{
+		"name": "Betteridge Bets",
+		"roles": ["developer"],
+		"year": "2024",
+		"location": "Berkeley, CA"
+	},
+	{
+		"name": "The New Yorker",
+		"roles": ["producer"],
+		"year": "2022 -> 2023",
+		"location": "New York City, NY"
+	},
+	{
+		"name": "Mars College",
+		"roles": ["reporter", "photographer"],
+		"year": "2022",
+		"location": "Bombay Beach, CA"
+	},
+
+	{
+		"name": "Watson Fellowship",
+		"roles": ["reporter", "photographer"],
+		"year": "2019 -> 2020",
+		"location": ["India, Myanmar"]
+	}
+]
