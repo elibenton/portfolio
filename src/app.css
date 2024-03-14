@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	@apply bg-slate-100;
+}
+
 @font-face {
 	font-family: 'timezone-italic';
 	src: url('/hal-fonts/hal-timezone-italic.otf') format('opentype');
@@ -35,7 +39,7 @@
 	}
 
 	.home-card {
-		@apply relative pb-6 pt-4 px-3 border-t border-black -mx-4 -mb-14 hover:-translate-y-10 flex justify-between bg-slate-100 transition-all duration-300 ease-in-out cursor-pointer;
+		@apply relative pb-6 pt-4 px-3 border-t border-black -mx-4 -mb-14 flex justify-between bg-slate-100 cursor-pointer;
 	}
 
 	.layered-image {

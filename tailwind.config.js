@@ -14,7 +14,8 @@ export default {
 				sohn: ['sohn-buch', 'ui-sans-serif']
 			},
 			transitionProperty: {
-				spacing: 'margin, padding'
+				spacing: 'margin, padding',
+				visibility: 'hidden, visible, invisible'
 			},
 			keyframes: {
 				rotate: {
