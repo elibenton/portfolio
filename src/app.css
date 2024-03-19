@@ -43,6 +43,6 @@ body {
 	}
 
 	.layered-image {
-		@apply relative max-w-64 sm:w-36 sm:h-36 m-2 self-center sm:self-start cursor-pointer;
+		@apply relative w-32 h-32 sm:w-36 sm:h-36 m-2 self-center sm:self-start cursor-pointer;
 	}
 }

@@ -1,13 +1,13 @@
 <script>
-	export let jobs, hoveredTab;
+	export let stories, hoveredTab;
 </script>
 
 <div class="hidden md:block border-l border-black">
-	{#each jobs as { name }}
+	{#each stories as { story }}
 		<img
-			class={`home-image ${hoveredTab === name ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200 ease-in-out`}
-			src={`/home-photos/${name.toLowerCase().replace(/\s/g, '-')}.webp`}
-			alt={name} />
+			class={`home-image ${hoveredTab === story ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200 ease-in-out`}
+			src={`/home-photos/${story.toLowerCase().replace(/\s/g, '-')}.webp`}
+			alt={story} />
 	{/each}
 	<img
 		class={`home-image ${hoveredTab === 'home' ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200 ease-in-out`}

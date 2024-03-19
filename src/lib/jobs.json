@@ -3,37 +3,50 @@
 		"name": "The New York Times",
 		"roles": ["producer"],
 		"year": "2023",
-		"location": "New York City, NY"
+		"location": "New York City, NY",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
 	},
 	{
 		"name": "Radiolab",
 		"roles": ["reporter", "producer"],
 		"year": "2020 -> 2023",
-		"location": "Kazakhstan"
-	},
-	{
-		"name": "Betteridge Bets",
-		"roles": ["developer"],
-		"year": "2024",
-		"location": "Berkeley, CA"
+		"location": "Kazakhstan",
+		"description": [
+			"Reported and produced an original story on the academic piracy website, Sci-Hub",
+			"Casted, pre-interviewed, interviewed, and cut tape for all new episodes",
+			"Helped produce a five-episode mini-series Mixtape, cutting over 100 hours of interview tape"
+		]
 	},
 	{
 		"name": "The New Yorker",
 		"roles": ["producer"],
 		"year": "2022 -> 2023",
-		"location": "New York City, NY"
+		"location": "New York City, NY",
+		"description": [
+			"Produced the recently re-launched New Yorker politics podcast, The Political Scene",
+			"Pitch, prepped, and produced the DC Roundtable with Jane Mayer, Susan Glasser, and Evan Osnos"
+		]
 	},
 	{
 		"name": "Mars College",
 		"roles": ["reporter", "photographer"],
 		"year": "2022",
-		"location": "Bombay Beach, CA"
+		"location": "Bombay Beach, CA",
+		"description": []
 	},
 
 	{
 		"name": "The Watson Fellowship",
 		"roles": ["reporter", "photographer"],
 		"year": "2019 -> 2020",
-		"location": ["India, Myanmar"]
+		"location": ["India, Myanmar"],
+		"description": [
+			"One-year grant for solo exploration outside of the US: reported from India, Myanmar, Nepal, and Spain",
+			"My project, Blurred Realities, examined the social and political consequences of a digitally networked world"
+		]
 	}
 ]

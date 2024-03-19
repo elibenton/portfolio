@@ -1,0 +1,101 @@
+[
+	{
+		"story": "The Big Swing",
+		"org": "New York Times",
+		"year": "2023",
+		"roles": "Producer",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "The Headlines",
+		"org": "New York Times",
+		"year": "2023",
+		"roles": "Producer",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "The Library of Alexandra",
+		"org": "Radiolab",
+		"year": "2023",
+		"roles": ["Reporter", "Producer"],
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "Mixtape",
+		"org": "Radiolab",
+		"year": "2021",
+		"roles": "Associate Producer",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "The Political Scene",
+		"org": "New Yorker",
+		"year": "2022",
+		"roles": "Associate Producer",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "Mars College",
+		"org": "Freelance",
+		"year": "2022",
+		"roles": ["Reporter", "Photographer"],
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "Watson Fellowship",
+		"org": "Freelance",
+		"year": "2020",
+		"roles": ["Reporter", "Photographer"],
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "Bamazon Union",
+		"org": "NPR",
+		"year": "2020",
+		"roles": ["Reporter", "Producer"],
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"story": "Forum",
+		"org": "NPR",
+		"year": "2017",
+		"roles": "Associate Producer",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	}
+]
