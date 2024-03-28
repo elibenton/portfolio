@@ -1,6 +1,7 @@
 [
 	{
-		"story": "The Big Swing",
+		"slug": "the-big-swing",
+		"title": "The Big Swing",
 		"org": "New York Times",
 		"year": "2023",
 		"roles": "Producer",
@@ -11,7 +12,8 @@
 		]
 	},
 	{
-		"story": "The Headlines",
+		"slug": "the-headlines",
+		"title": "The Headlines",
 		"org": "New York Times",
 		"year": "2023",
 		"roles": "Producer",
@@ -22,7 +24,8 @@
 		]
 	},
 	{
-		"story": "The Library of Alexandra",
+		"slug": "the-library-of-alexandra",
+		"title": "The Library of Alexandra",
 		"org": "Radiolab",
 		"year": "2023",
 		"roles": ["Reporter", "Producer"],
@@ -33,7 +36,8 @@
 		]
 	},
 	{
-		"story": "Mixtape",
+		"slug": "mixtape",
+		"title": "Mixtape",
 		"org": "Radiolab",
 		"year": "2021",
 		"roles": "Associate Producer",
@@ -44,7 +48,8 @@
 		]
 	},
 	{
-		"story": "The Political Scene",
+		"slug": "the-political-scene",
+		"title": "The Political Scene",
 		"org": "New Yorker",
 		"year": "2022",
 		"roles": "Associate Producer",
@@ -55,7 +60,8 @@
 		]
 	},
 	{
-		"story": "Mars College",
+		"slug": "mars-college",
+		"title": "Mars College",
 		"org": "Freelance",
 		"year": "2022",
 		"roles": ["Reporter", "Photographer"],
@@ -66,7 +72,8 @@
 		]
 	},
 	{
-		"story": "Watson Fellowship",
+		"slug": "watson-fellowship",
+		"title": "Watson Fellowship",
 		"org": "Freelance",
 		"year": "2020",
 		"roles": ["Reporter", "Photographer"],
@@ -77,7 +84,8 @@
 		]
 	},
 	{
-		"story": "Bamazon Union",
+		"slug": "bamazon-union",
+		"title": "Bamazon Union",
 		"org": "NPR",
 		"year": "2020",
 		"roles": ["Reporter", "Producer"],
@@ -88,7 +96,8 @@
 		]
 	},
 	{
-		"story": "Forum",
+		"slug": "forum",
+		"title": "Forum",
 		"org": "NPR",
 		"year": "2017",
 		"roles": "Associate Producer",

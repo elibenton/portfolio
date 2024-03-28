@@ -22,14 +22,11 @@
 		"postcss": "^8.4.35",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.13",
 		"svelte": "^4.2.7",
 		"tailwindcss": "^3.4.1",
 		"vite": "^5.0.3"
 	},
 	"type": "module",
-	"packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4",
-	"dependencies": {
-		"flowbite": "^2.3.0",
-		"flowbite-svelte": "^0.44.24"
-	}
+	"packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
 }

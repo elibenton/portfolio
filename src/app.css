@@ -35,14 +35,18 @@ body {
 
 @layer components {
 	.home-image {
-		@apply fixed top-0 right-0 -z-10 h-full w-2/5 object-cover object-bottom transition-opacity duration-100;
+		@apply fixed right-0 top-0 -z-10 h-full w-2/5 object-cover object-bottom transition-opacity duration-100;
 	}
 
 	.home-card {
-		@apply relative pb-6 pt-4 px-3 border-t border-black -mx-4 -mb-14 flex justify-between bg-slate-100 cursor-pointer;
+		@apply relative -mx-4 -mb-14 flex cursor-pointer justify-between border-t border-black bg-slate-100 px-3 pb-6 pt-4;
 	}
 
 	.layered-image {
-		@apply relative w-32 h-32 sm:w-36 sm:h-36 m-2 self-center sm:self-start cursor-pointer;
+		@apply relative m-2 h-32 w-32 cursor-pointer self-center sm:h-36 sm:w-36 sm:self-start;
+	}
+
+	.org-button {
+		@apply h-full -translate-y-10 rounded-full border border-black px-2 py-1 font-mono text-sm;
 	}
 }
