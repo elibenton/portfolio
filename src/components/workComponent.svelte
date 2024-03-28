@@ -1,5 +1,5 @@
 <script>
-	import { fade } from 'svelte/transition';
+	// import { fade } from 'svelte/transition';
 
 	export let stories, hoveredTab;
 
@@ -12,17 +12,16 @@
 	};
 </script>
 
-<div transition:fade>
+<div>
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->
 	{#each stories as { title, roles, year, org, description, slug }}
 		<a
 			href={slug}
-			class="home-card group transition-all duration-300 ease-out hover:-translate-y-6 sm:hover:-translate-y-10"
+			class="home-card group hover:-translate-y-6 sm:hover:-translate-y-10"
 			on:mouseenter={() => (hoveredTab = title)}
-			on:mouseleave={() => (hoveredTab = 'home')}
-		>
+			on:mouseleave={() => (hoveredTab = 'home')}>
 			<div>
 				<h1 class="relative font-sohn text-2xl font-medium md:text-4xl">
 					{title}
@@ -31,8 +30,7 @@
 					{year} &bull; {roles instanceof Array ? roles.join(', ') : roles}
 				</span>
 				<div
-					class="max-h-0 w-2/3 overflow-hidden p-1 transition-all duration-200 ease-in-out md:duration-500"
-				>
+					class="max-h-0 w-2/3 overflow-hidden p-1 transition-all duration-200 ease-in-out md:duration-500">
 					<ul>
 						{#each description as bullet}
 							<li>{bullet}</li>
@@ -45,8 +43,7 @@
 					Read More ↴
 				</p>
 				<span
-					class={`${hoveredTab === title ? 'opacity-0' : 'opacity-100'} ${colors[org]} org-button`}
-				>
+					class={`${hoveredTab === title ? 'opacity-0' : 'opacity-100'} ${colors[org]} org-button`}>
 					{org}
 				</span>
 			</div>

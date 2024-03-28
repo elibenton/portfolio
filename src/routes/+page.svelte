@@ -15,8 +15,7 @@
 
 <div class="flex overflow-clip">
 	<div
-		class="flex h-screen w-full flex-col justify-between bg-slate-100 px-4 sm:p-4 lg:w-3/5"
-	>
+		class="flex h-screen w-full flex-col justify-between bg-slate-100 px-4 sm:p-4 lg:w-3/5">
 		<Home {about} on:click={() => (about = !about)} />
 		{#if about}
 			<About />
