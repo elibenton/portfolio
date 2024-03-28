@@ -12,40 +12,32 @@
 	};
 </script>
 
-<div>
+<div class="translate-y-4">
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->
 	{#each stories as { title, roles, year, org, description, slug }}
 		<a
 			href={slug}
-			class="home-card group hover:-translate-y-6 sm:hover:-translate-y-10"
+			class="home-card group"
 			on:mouseenter={() => (hoveredTab = title)}
 			on:mouseleave={() => (hoveredTab = 'home')}>
 			<div>
-				<h1 class="relative font-sohn text-2xl font-medium md:text-4xl">
+				<h1 class="font-sohn text-2xl font-medium md:text-4xl">
 					{title}
 				</h1>
-				<span class="relative p-1 font-mono text-sm">
+				<span class="p-1 font-mono text-sm">
 					{year} &bull; {roles instanceof Array ? roles.join(', ') : roles}
 				</span>
-				<div
-					class="max-h-0 w-2/3 overflow-hidden p-1 transition-all duration-200 ease-in-out md:duration-500">
-					<ul>
-						{#each description as bullet}
-							<li>{bullet}</li>
-						{/each}
-					</ul>
-				</div>
 			</div>
 			<div class="shrink-0">
-				<p class={`${hoveredTab === title ? 'opacity-100' : 'opacity-0'}`}>
-					Read More ↴
-				</p>
-				<span
-					class={`${hoveredTab === title ? 'opacity-0' : 'opacity-100'} ${colors[org]} org-button`}>
-					{org}
-				</span>
+				{#if hoveredTab === title}
+					<p>Click for more →</p>
+				{:else}
+					<span class={`${colors[org]} org-button`}>
+						{org}
+					</span>
+				{/if}
 			</div>
 		</a>
 	{/each}
