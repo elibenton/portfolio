@@ -12,7 +12,8 @@
 	<p>
 		Some of my longstanding interests include American political realignment,
 		techno-utopianism, and Southern history. I also take photographs, some of
-		which you can view <a class="underline" href="photos.eli.fm">here</a>.
+		which you can view <a class="underline" href="https://photos.eli.fm">here</a
+		>.
 	</p>
 	<p>
 		I grew up in Birmingham, Alabama and currently live in Berkeley, California.

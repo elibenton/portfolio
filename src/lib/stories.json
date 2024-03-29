@@ -1,17 +1,5 @@
 [
 	{
-		"slug": "the-big-swing",
-		"title": "The Big Swing",
-		"org": "New York Times",
-		"year": "2023",
-		"roles": "Producer",
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
-	},
-	{
 		"slug": "the-headlines",
 		"title": "The Headlines",
 		"org": "New York Times",
