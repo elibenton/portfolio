@@ -13,6 +13,18 @@
 	$: console.log('ABOUT:', about);
 </script>
 
+<svelte:head>
+	<title>Eli Benton Cohen | Freelance Journalist</title>
+	<meta
+		name="description"
+		content="Eli Benton Cohen is a audio producer, reporter, and photographer." />
+	<meta
+		name="tags"
+		content="Radio, Journalist, Freelance, Producer, NPR, New York Times, Eli, Eli Benton, Eli Benton Cohen, Eli COhen, Podcast, Podcast Producer, Freelance Journalist, Radiolab, New Yorker, Audio Journalist, Audio, Radio Producer" />
+	<meta name="author" content="Eli Benton Cohen" />
+	<meta http-equiv="”Content-Language”" content="”en-us”" />
+</svelte:head>
+
 <div class="flex overflow-clip">
 	<div
 		class="flex h-screen w-full flex-col justify-between bg-slate-100 px-4 sm:p-4 lg:w-3/5">

@@ -3,12 +3,15 @@
 
 	export let stories, hoveredTab;
 
+	let filteredStores = stories.filter((stories) => stories.publish);
+
 	const colors = {
 		'New York Times': 'bg-yellow-200',
 		Radiolab: 'bg-red-200',
 		'New Yorker': 'bg-blue-200',
 		Freelance: 'bg-green-200',
-		NPR: 'bg-purple-200'
+		NPR: 'bg-purple-200',
+		'The Hive': 'bg-orange-200'
 	};
 </script>
 
@@ -16,7 +19,7 @@
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->
-	{#each stories as { title, roles, year, org, description, slug }}
+	{#each filteredStores as { title, roles, year, org, description, slug }}
 		<a
 			href={slug}
 			class="home-card group"

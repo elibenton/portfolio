@@ -1,5 +1,6 @@
 [
 	{
+		"publish": true,
 		"slug": "the-headlines",
 		"title": "The Headlines",
 		"org": "New York Times",
@@ -9,9 +10,40 @@
 			"Produced The New York Times's new daily news podcast, The Headlines",
 			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
 			"Planned coverage with Times correspondents and editors from around the world"
+		],
+		"works": [
+			{
+				"title": "McCarthy is Ousted",
+				"date": "2023-10-04",
+				"description": "description",
+				"link": "https://www.nytimes.com/2023/10/04/podcasts/headlines-nyt-audio-app.html"
+			},
+			{
+				"title": "The Implications for the Failed Wagner Rebellion",
+				"date": "2023-06-27",
+				"description": "description",
+				"link": "https://www.nytimes.com/2023/06/27/podcasts/headlines-nyt-audio-app.html"
+			},
+			{
+				"title": "The Google Monopoly Trial",
+				"date": "2023-09-12",
+				"description": "description",
+				"link": "https://www.nytimes.com/2023/09/12/podcasts/headlines-nyt-audio-app.html"
+			}
 		]
 	},
 	{
+		"publish": false,
+		"slug": "the-big-swing",
+		"title": "The Big Swing",
+		"org": "New York Times",
+		"year": "2023",
+		"roles": "Producer",
+		"description": [],
+		"works": []
+	},
+	{
+		"publish": true,
 		"slug": "the-library-of-alexandra",
 		"title": "The Library of Alexandra",
 		"org": "Radiolab",
@@ -24,6 +56,7 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "mixtape",
 		"title": "Mixtape",
 		"org": "Radiolab",
@@ -36,6 +69,7 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "the-political-scene",
 		"title": "The Political Scene",
 		"org": "New Yorker",
@@ -48,6 +82,7 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "mars-college",
 		"title": "Mars College",
 		"org": "Freelance",
@@ -60,6 +95,7 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "watson-fellowship",
 		"title": "Watson Fellowship",
 		"org": "Freelance",
@@ -72,6 +108,7 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "bamazon-union",
 		"title": "Bamazon Union",
 		"org": "NPR",
@@ -84,15 +121,47 @@
 		]
 	},
 	{
+		"publish": true,
 		"slug": "forum",
 		"title": "Forum",
 		"org": "NPR",
-		"year": "2017",
+		"year": "2018",
 		"roles": "Associate Producer",
 		"description": [
 			"Produced The New York Times's new daily news podcast, The Headlines",
 			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
 			"Planned coverage with Times correspondents and editors from around the world"
 		]
+	},
+	{
+		"publish": false,
+		"slug": "disco",
+		"title": "Discussion Collective",
+		"org": "The Hive",
+		"year": "2018",
+		"roles": "Host",
+		"description": [
+			"Produced The New York Times's new daily news podcast, The Headlines",
+			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
+			"Planned coverage with Times correspondents and editors from around the world"
+		]
+	},
+	{
+		"publish": true,
+		"slug": "transom",
+		"title": "Transom Article",
+		"org": "Transom",
+		"year": "2021",
+		"roles": "Author",
+		"description": []
+	},
+	{
+		"publish": true,
+		"slug": "tape-delay",
+		"title": "Tape Delay",
+		"org": "Podcast Garage",
+		"year": "2023",
+		"roles": "Instructor",
+		"description": []
 	}
 ]
