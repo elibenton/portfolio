@@ -2,12 +2,13 @@
 	// import { fade } from 'svelte/transition';
 </script>
 
-<div class="px-2 text-xl *:my-4 sm:*:text-3xl lg:mb-12 lg:px-8">
+<div
+	class="mb-2 px-2 text-lg *:my-4 sm:mb-12 sm:*:text-2xl lg:px-8 lg:*:text-3xl">
 	<p>I am a freelance audio producer and reporter.</p>
 	<p>
-		I have made just about every kind of podcast imaginable: daily news,
-		narrative series, longform investigations, and talk shows. My reporting has
-		taken me to Kazakhstan, Myanmar, India, and all across the United States.
+		I have made just about every kind of podcast: daily news, narrative series,
+		longform investigations, and talk shows. My reporting has taken me to
+		Kazakhstan, Myanmar, India, and all across the United States.
 	</p>
 	<p>
 		Some of my longstanding interests include American political realignment,

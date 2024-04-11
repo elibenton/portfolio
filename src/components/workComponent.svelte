@@ -15,18 +15,18 @@
 	};
 </script>
 
-<div class="translate-y-4">
+<div class="sm:translate-y-4">
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-missing-attribute -->
 	{#each filteredStores as { title, roles, year, org, description, slug }}
 		<a
 			href={slug}
-			class="home-card group"
+			class="home-card group pointer-events-none sm:pointer-events-auto"
 			on:mouseenter={() => (hoveredTab = title)}
 			on:mouseleave={() => (hoveredTab = 'home')}>
 			<div>
-				<h1 class="font-sohn text-2xl font-medium md:text-4xl">
+				<h1 class="font-sohn text-xl font-medium sm:text-2xl md:text-4xl">
 					{title}
 				</h1>
 				<span class="p-1 font-mono text-sm">

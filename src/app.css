@@ -47,6 +47,6 @@ body {
 	}
 
 	.org-button {
-		@apply rounded-full border border-black px-2 py-1 font-mono text-sm;
+		@apply rounded-full border border-black px-2 py-1 font-mono text-xs sm:text-sm;
 	}
 }
