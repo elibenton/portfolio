@@ -16,10 +16,11 @@
 		India.
 	</p>
 	<p>
-		I've embedded in crypto communes, and interviewed Nobel laureates. The
-		stranger the story, the more I want to cover it. I also take photographs,
-		some of which you can view <a class="underline" href="https://photos.eli.fm"
-			>here</a
+		I've embedded in crypto communes, explored the lab where Ecstasy was
+		created, and interviewed Nobel laureates. The stranger the story, the more I
+		want to cover it. I also take photographs, some of which you can view <a
+			class="underline"
+			href="https://photos.eli.fm">here</a
 		>.
 	</p>
 	<p>
