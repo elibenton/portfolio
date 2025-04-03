@@ -3,10 +3,9 @@
 </script>
 
 <div class="mb-2 px-2 text-lg *:my-4 sm:mb-12 sm:*:text-2xl lg:px-8">
-	<p>I am a freelance audio producer and reporter.</p>
+	<p>I am a freelance journalist and graduate student at the UC Berkeley Graduate School of Journalism.</p>
 	<p>
-		Over the past decade, I have made just about every kind of podcast
-		imaginable: daily news, narrative series, long-form investigations, even
+		I've mainly worked in radio and podcasting, producing daily news, narrative series, long-form investigations, even
 		live talk shows.
 	</p>
 	<p>
