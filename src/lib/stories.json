@@ -1,13 +1,29 @@
 [
 	{
 		"publish": true,
+		"slug": "radio-pacific",
+		"title": "Radio Pacific",
+		"org": "NPR",
+		"year": "2025",
+		"roles": ["Reporter", "Producer", "Host"],
+		"description": [],
+		"works": []
+	},
+	{
+		"publish": true,
 		"slug": "crosscurrents",
 		"title": "Crosscurrents",
 		"org": "NPR",
-		"year": "2024",
+		"year": "2025",
 		"roles": ["Reporter", "Producer"],
 		"description": [],
 		"works": [
+			{
+				"title": "Sanctuary Cities Past And Present",
+				"date": "205-02-05",
+				"description": "The new administration has introduced the harshest immigration policies in decades. Today, we hear about the history of the Sanctuary movement, and how the Bay Area is responding to federal pressures.",
+				"link": "https://www.kalw.org/podcast/crosscurrents/2025-02-25/sanctuary-cities-past-and-present"
+			},
 			{
 				"title": "UC Berkeley and Divestment",
 				"date": "2024-06-06",
