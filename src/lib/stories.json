@@ -34,8 +34,8 @@
 	},
 	{
 		"publish": true,
-		"slug": "nyt-audio",
-		"title": "Pilot Series",
+		"slug": "nyt-narrative-projects",
+		"title": "Narrative Project",
 		"org": "New York Times",
 		"year": "2024",
 		"roles": "Producer",
