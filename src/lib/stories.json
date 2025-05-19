@@ -12,17 +12,13 @@
 				"date": "2025-05-06",
 				"description": "",
 				"link": "https://radiopacific.co/"
+			},
+			{
+				"title": "Los Angeles and Fire",
+				"date": "2025-06-03",
+				"description": "",
+				"link": "https://radiopacific.co/"
 			}]
-	},
-	{
-		"publish": true,
-		"slug": "the-protocol",
-		"title": "The Protocol",
-		"org": "New York Times",
-		"year": "2025",
-		"roles": ["Producer"],
-		"description": [],
-		"works": []
 	},
 	{
 		"publish": true,
@@ -49,15 +45,14 @@
 	},
 	{
 		"publish": true,
-		"slug": "nyt-narrative-projects",
-		"title": "Narrative Project",
+		"slug": "the-protocol",
+		"title": "The Protocol",
 		"org": "New York Times",
-		"year": "2024",
-		"roles": "Producer",
+		"year": "2025",
+		"roles": ["Producer"],
 		"description": [],
 		"works": []
 	},
-
 	{
 		"publish": true,
 		"slug": "the-headlines",
