@@ -3,11 +3,12 @@
 		"publish": true,
 		"slug": "radio-pacific",
 		"title": "Radio Pacific",
-		"org": "NPR",
+		"org": "Freelance",
 		"year": "2025",
 		"roles": ["Reporter", "Producer", "Host"],
 		"description": [],
-		"works": [{
+		"works": [
+			{
 				"title": "Rapid Response Hotline",
 				"date": "2025-05-06",
 				"description": "",
@@ -18,7 +19,8 @@
 				"date": "2025-06-03",
 				"description": "",
 				"link": "https://radiopacific.co/"
-			}]
+			}
+		]
 	},
 	{
 		"publish": true,
