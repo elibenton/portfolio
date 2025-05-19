@@ -7,6 +7,21 @@
 		"year": "2025",
 		"roles": ["Reporter", "Producer", "Host"],
 		"description": [],
+		"works": [{
+				"title": "Rapid Response Hotline",
+				"date": "2025-05-06",
+				"description": "",
+				"link": "https://radiopacific.co/"
+			},]
+	},
+	{
+		"publish": true,
+		"slug": "the-protocol",
+		"title": "The Protocol",
+		"org": "New York Times",
+		"year": "2025",
+		"roles": ["Producer"],
+		"description": [],
 		"works": []
 	},
 	{
@@ -20,7 +35,7 @@
 		"works": [
 			{
 				"title": "Sanctuary Cities Past And Present",
-				"date": "205-02-05",
+				"date": "2025-02-05",
 				"description": "The new administration has introduced the harshest immigration policies in decades. Today, we hear about the history of the Sanctuary movement, and how the Bay Area is responding to federal pressures.",
 				"link": "https://www.kalw.org/podcast/crosscurrents/2025-02-25/sanctuary-cities-past-and-present"
 			},
