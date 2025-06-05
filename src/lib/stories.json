@@ -52,8 +52,12 @@
 		"org": "New York Times",
 		"year": "2025",
 		"roles": ["Producer"],
-		"description": [],
-		"works": []
+		"description": [
+			"A six-part podcast exploring the origins of medical treatment for transgender young people, and how the care got pulled into a political fight that could end it in the United States."
+		],
+		"works": [
+			"https://www.nytimes.com/2025/06/02/podcasts/trans-gender-care-protocol.html"
+		]
 	},
 	{
 		"publish": true,
