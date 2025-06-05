@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply bg-slate-100;
+	@apply bg-stone-50;
 }
 
 @font-face {
@@ -39,7 +39,7 @@ body {
 	}
 
 	.home-card {
-		@apply relative -mx-4 -mb-11 flex cursor-pointer justify-between border-t border-black bg-slate-100 px-2 pb-6 pt-3 transition-transform duration-500 ease-out hover:-translate-y-6 sm:hover:-translate-y-8;
+		@apply relative -mx-4 -mb-11 flex cursor-pointer justify-between border-t border-black bg-stone-50 px-2 pb-6 pt-3 transition-transform duration-500 ease-out hover:-translate-y-6 sm:hover:-translate-y-8;
 	}
 
 	.layered-image {

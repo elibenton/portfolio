@@ -6,12 +6,12 @@
 	let filteredStores = stories.filter((stories) => stories.publish);
 
 	const colors = {
-		'New York Times': 'bg-yellow-200',
+		'The New York Times': 'bg-yellow-200',
 		Radiolab: 'bg-red-200',
-		'New Yorker': 'bg-blue-200',
-		Freelance: 'bg-green-200',
+		'The New Yorker': 'bg-green-200',
+		Freelance: 'bg-orange-200',
 		NPR: 'bg-purple-200',
-		'The Hive': 'bg-orange-200'
+		KALW: 'bg-blue-200'
 	};
 </script>
 
