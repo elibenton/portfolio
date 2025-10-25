@@ -8,9 +8,6 @@
 
 	let hoveredTab = 'home';
 	let about = false;
-
-	$: console.log('HOVERED:', hoveredTab);
-	$: console.log('ABOUT:', about);
 </script>
 
 <svelte:head>
@@ -22,7 +19,7 @@
 		name="tags"
 		content="Radio, Journalist, Freelance, Producer, NPR, New York Times, Eli, Eli Benton, Eli Benton Cohen, Eli COhen, Podcast, Podcast Producer, Freelance Journalist, Radiolab, New Yorker, Audio Journalist, Audio, Radio Producer" />
 	<meta name="author" content="Eli Benton Cohen" />
-	<meta http-equiv="”Content-Language”" content="”en-us”" />
+	<meta http-equiv="Content-Language" content="en-us" />
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://eli.fm" />
