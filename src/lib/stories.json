@@ -47,6 +47,35 @@
 	},
 	{
 		"publish": true,
+		"slug": "oakland-north",
+		"title": "Oakland North",
+		"org": "Oakland North",
+		"year": "2025",
+		"roles": "Reporter",
+		"description": [],
+		"works": [
+			{
+				"title": "Protesters clash with feds at Coast Guard Island; Trump calls off Bay Area enforcement action",
+				"date": "2025-10-23",
+				"description": "Coverage of a protest at Coast Guard Island where federal enforcement clashes occurred. Mayor Barbara Lee emphasized Oakland's commitment as a welcoming city.",
+				"link": "https://oaklandnorth.net/2025/10/23/protesters-clash-with-border-patrol-at-coast-guard-island-as-trump-calls-off-bay-area-enforcement-action/"
+			},
+			{
+				"title": "Alameda Supervisors increase aid for immigrant legal services",
+				"date": "2025-10-15",
+				"description": "The Alameda County Board of Supervisors unanimously approved approximately $3.6 million in new funding for immigrant services.",
+				"link": "https://oaklandnorth.net/2025/10/15/alameda-supervisors-increase-aid-for-immigrant-legal-services/"
+			},
+			{
+				"title": "Protesters want ICE out of Oakland amid reports of seven people taken into custody",
+				"date": "2025-09-21",
+				"description": "Demonstration near an East Oakland intersection where federal immigration agents reportedly detained individuals.",
+				"link": "https://oaklandnorth.net/2025/09/21/protesters-want-ice-out-of-oakland-amid-reports-of-seven-people-taken-into-custody/"
+			}
+		]
+	},
+	{
+		"publish": true,
 		"slug": "the-protocol",
 		"title": "The Protocol",
 		"org": "The New York Times",
