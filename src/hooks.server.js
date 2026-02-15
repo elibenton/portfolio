@@ -1,17 +1,7 @@
 import { dev } from '$app/environment';
 
-const contentSecurityPolicy = [
-	"default-src 'self'",
-	"base-uri 'self'",
-	"frame-ancestors 'none'",
-	"object-src 'none'",
-	"form-action 'self'",
-	"img-src 'self' data: https:",
-	"font-src 'self'",
-	"script-src 'self'",
-	"style-src 'self' 'unsafe-inline'",
-	"connect-src 'self'"
-].join('; ');
+// CSP is now handled by SvelteKit's built-in kit.csp config in svelte.config.js,
+// which automatically generates nonces for inline hydration scripts.
 
 const securityHeaders = {
 	'referrer-policy': 'strict-origin-when-cross-origin',
@@ -25,10 +15,6 @@ export const handle = async ({ event, resolve }) => {
 
 	for (const [name, value] of Object.entries(securityHeaders)) {
 		response.headers.set(name, value);
-	}
-
-	if (!dev) {
-		response.headers.set('content-security-policy', contentSecurityPolicy);
 	}
 
 	if (!dev && event.url.protocol === 'https:') {
