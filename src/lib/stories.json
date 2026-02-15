@@ -2,7 +2,7 @@
 	{
 		"publish": true,
 		"slug": "san-francisco-chronicle",
-		"title": "Applying for Asylum, Abudcted by ICE",
+		"title": "Abducted by ICE",
 		"org": "SF Chronicle",
 		"year": "2025",
 		"roles": "Reporter",
@@ -48,7 +48,7 @@
 		"publish": true,
 		"slug": "the-protocol",
 		"title": "The Protocol",
-		"org": "The New York Times",
+		"org": "New York Times",
 		"year": "2025",
 		"roles": ["Producer"],
 		"description": [
@@ -100,14 +100,10 @@
 		"publish": true,
 		"slug": "the-headlines",
 		"title": "The Headlines",
-		"org": "The New York Times",
+		"org": "New York Times",
 		"year": "2023",
 		"roles": "Producer",
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		],
+		"description": [],
 		"works": [
 			{
 				"title": "McCarthy is Ousted",
@@ -136,11 +132,7 @@
 		"org": "Radiolab",
 		"year": "2023",
 		"roles": ["Reporter", "Producer"],
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
+		"description": []
 	},
 	{
 		"publish": true,
@@ -193,11 +185,7 @@
 		"org": "The New Yorker",
 		"year": "2022",
 		"roles": "Associate Producer",
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
+		"description": []
 	},
 	{
 		"publish": true,
@@ -206,11 +194,7 @@
 		"org": "Freelance",
 		"year": "2022",
 		"roles": ["Reporter", "Photographer"],
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
+		"description": []
 	},
 	{
 		"publish": true,
@@ -219,11 +203,7 @@
 		"org": "Freelance",
 		"year": "2020",
 		"roles": ["Reporter", "Photographer"],
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
+		"description": []
 	},
 	{
 		"publish": false,
@@ -232,11 +212,7 @@
 		"org": "The Hive",
 		"year": "2018",
 		"roles": "Host",
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
+		"description": []
 	},
 	{
 		"publish": false,

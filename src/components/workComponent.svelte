@@ -1,12 +1,16 @@
 <script>
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+
 	// import { fade } from 'svelte/transition';
 
 	export let stories, hoveredTab;
 
 	let filteredStores = stories.filter((stories) => stories.publish);
+	let enablePreviewInteractions = false;
 
 	const colors = {
-		'The New York Times': 'bg-yellow-200',
+		'New York Times': 'bg-yellow-200',
 		Radiolab: 'bg-red-200',
 		'The New Yorker': 'bg-green-200',
 		Freelance: 'bg-orange-200',
@@ -14,6 +18,30 @@
 		NPR: 'bg-purple-200',
 		KALW: 'bg-blue-200'
 	};
+
+	const updatePreviewMode = () => {
+		if (!browser) return;
+		enablePreviewInteractions = window.matchMedia(
+			'(hover: hover) and (pointer: fine)'
+		).matches;
+		if (!enablePreviewInteractions) hoveredTab = 'home';
+	};
+
+	const showPreview = (title) => {
+		if (!enablePreviewInteractions) return;
+		hoveredTab = title;
+	};
+
+	const clearPreview = () => {
+		if (!enablePreviewInteractions) return;
+		hoveredTab = 'home';
+	};
+
+	onMount(() => {
+		updatePreviewMode();
+		window.addEventListener('resize', updatePreviewMode);
+		return () => window.removeEventListener('resize', updatePreviewMode);
+	});
 </script>
 
 <div class="sm:translate-y-4">
@@ -21,10 +49,10 @@
 		<a
 			href={slug}
 			class="home-card group"
-			on:mouseenter={() => (hoveredTab = title)}
-			on:mouseleave={() => (hoveredTab = 'home')}
-			on:focus={() => (hoveredTab = title)}
-			on:blur={() => (hoveredTab = 'home')}
+			on:mouseenter={() => showPreview(title)}
+			on:mouseleave={clearPreview}
+			on:focus={() => showPreview(title)}
+			on:blur={clearPreview}
 		>
 			<div>
 				<h2
@@ -32,7 +60,7 @@
 				>
 					{title}
 				</h2>
-				<span class="block translate-y-1 px-1 pb-1 font-mono text-[0.79rem]">
+				<span class="block translate-y-1 font-mono text-[0.79rem]">
 					{year} &bull; {roles instanceof Array ? roles.join(', ') : roles}
 				</span>
 			</div>

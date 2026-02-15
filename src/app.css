@@ -47,7 +47,7 @@ body {
 	}
 
 	.home-card {
-		@apply relative -mx-4 -mb-11 flex cursor-pointer justify-between border-t border-black bg-stone-50 px-2 pb-5 pt-1 transition-transform duration-500 ease-out hover:-translate-y-6 focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black sm:hover:-translate-y-8;
+		@apply relative -mx-4 mb-0 flex cursor-pointer justify-between border-t border-black bg-stone-50 p-2 transition-transform duration-500 ease-out focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black sm:-mb-11 sm:px-2 sm:pb-5 sm:hover:-translate-y-8;
 	}
 
 	.layered-image {
