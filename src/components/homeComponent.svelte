@@ -21,7 +21,9 @@
 		alt="Eli written in squiggly ink"
 		class="absolute left-0 top-0 group-hover:translate-y-0.5 group-hover:rotate-6"
 	/>
-	<div class="flex translate-y-24 flex-row justify-center space-x-3">
+	<div
+		class="flex translate-y-16 flex-row justify-center space-x-3 sm:translate-y-24"
+	>
 		<p class={`${!about && 'font-bold'}`}>work</p>
 		<p class={`${about && 'font-bold'}`}>about</p>
 	</div>

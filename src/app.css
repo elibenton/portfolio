@@ -51,7 +51,7 @@ body {
 	}
 
 	.layered-image {
-		@apply relative m-2 h-32 w-32 cursor-pointer self-center sm:h-36 sm:w-36 sm:self-start;
+		@apply relative m-2 h-24 w-24 cursor-pointer self-center sm:h-36 sm:w-36 sm:self-start;
 	}
 
 	.org-button {
