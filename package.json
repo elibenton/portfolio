@@ -4,14 +4,16 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "CF_PAGES=1 vite build",
 		"preview": "vite preview",
+		"dev:cf": "wrangler pages dev .svelte-kit/cloudflare",
+		"build:cf": "CF_PAGES=1 vite build",
+		"deploy:cf": "CF_PAGES=1 vite build && wrangler pages deploy .svelte-kit/cloudflare --project-name=$CLOUDFLARE_PAGES_PROJECT",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/adapter-vercel": "^5.1.1",
+		"@sveltejs/adapter-cloudflare": "^7.2.7",
 		"@sveltejs/kit": "2.49.5",
 		"@sveltejs/vite-plugin-svelte": "3.0.2",
 		"@types/eslint": "^8.56.0",
@@ -25,7 +27,8 @@
 		"prettier-plugin-tailwindcss": "^0.5.13",
 		"svelte": "^4.2.7",
 		"tailwindcss": "^3.4.1",
-		"vite": "^5.0.3"
+		"vite": "^5.0.3",
+		"wrangler": "^4.65.0"
 	},
 	"overrides": {
 		"cookie": "^0.7.2",
