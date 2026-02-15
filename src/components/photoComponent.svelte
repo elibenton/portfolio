@@ -9,14 +9,12 @@
 </script>
 
 <div class="hidden border-l border-black md:block">
-	{#key activeSlug}
-		<img
-			class="home-image"
-			src={`/home-photos/${activeSlug}.webp`}
-			alt={activeAlt}
-			decoding="async"
-			loading="eager"
-			fetchpriority={activeSlug === 'home' ? 'high' : 'auto'}
-		/>
-	{/key}
+	<img
+		class="home-image"
+		src={`/home-photos/${activeSlug}.webp`}
+		alt={activeAlt}
+		decoding="async"
+		loading="eager"
+		fetchpriority={activeSlug === 'home' ? 'high' : 'auto'}
+	/>
 </div>

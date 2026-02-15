@@ -16,6 +16,15 @@
 	onMount(() => {
 		previousHtmlFontSize = document.documentElement.style.fontSize;
 		document.documentElement.style.fontSize = '95%';
+
+		// Preload all project images into browser memory cache
+		const slugs = stories.filter((s) => s.publish).map((s) => s.slug);
+		slugs.forEach((slug, i) => {
+			setTimeout(() => {
+				const img = new Image();
+				img.src = `/home-photos/${slug}.webp`;
+			}, i * 100);
+		});
 	});
 
 	onDestroy(() => {
@@ -25,6 +34,10 @@
 </script>
 
 <svelte:head>
+	<link rel="preload" as="image" type="image/webp" href="/home-photos/home.webp" />
+	<link rel="preload" as="image" type="image/webp" href="/home-photos/san-francisco-chronicle.webp" />
+	<link rel="preload" as="image" type="image/webp" href="/home-photos/radio-pacific.webp" />
+
 	<title>Eli Benton Cohen | Freelance Journalist</title>
 	<meta
 		name="description"
