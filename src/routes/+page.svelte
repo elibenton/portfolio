@@ -1,4 +1,6 @@
 <script>
+	import { browser } from '$app/environment';
+	import { onDestroy, onMount } from 'svelte';
 	import stories from '$lib/stories.json';
 
 	import Photos from '../components/photoComponent.svelte';
@@ -8,16 +10,30 @@
 
 	let hoveredTab = 'home';
 	let about = false;
+
+	let previousHtmlFontSize;
+
+	onMount(() => {
+		previousHtmlFontSize = document.documentElement.style.fontSize;
+		document.documentElement.style.fontSize = '95%';
+	});
+
+	onDestroy(() => {
+		if (!browser) return;
+		document.documentElement.style.fontSize = previousHtmlFontSize || '';
+	});
 </script>
 
 <svelte:head>
 	<title>Eli Benton Cohen | Freelance Journalist</title>
 	<meta
 		name="description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer." />
+		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+	/>
 	<meta
 		name="tags"
-		content="Radio, Journalist, Freelance, Producer, NPR, New York Times, Eli, Eli Benton, Eli Benton Cohen, Eli COhen, Podcast, Podcast Producer, Freelance Journalist, Radiolab, New Yorker, Audio Journalist, Audio, Radio Producer" />
+		content="Radio, Journalist, Freelance, Producer, NPR, New York Times, Eli, Eli Benton, Eli Benton Cohen, Eli COhen, Podcast, Podcast Producer, Freelance Journalist, Radiolab, New Yorker, Audio Journalist, Audio, Radio Producer"
+	/>
 	<meta name="author" content="Eli Benton Cohen" />
 	<meta http-equiv="Content-Language" content="en-us" />
 
@@ -27,8 +43,9 @@
 	<meta property="og:title" content="Eli Benton Cohen | Freelance Journalist" />
 	<meta
 		property="og:description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer." />
-	<meta property="og:image" content="/static/home OG.jpg" />
+		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+	/>
+	<meta property="og:image" content="/home OG.jpg" />
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -36,16 +53,19 @@
 	<meta property="twitter:url" content="https://eli.fm" />
 	<meta
 		name="twitter:title"
-		content="Eli Benton Cohen | Freelance Journalist" />
+		content="Eli Benton Cohen | Freelance Journalist"
+	/>
 	<meta
 		name="twitter:description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer." />
-	<meta name="twitter:image" content="/static/home OG.jpg" />
+		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+	/>
+	<meta name="twitter:image" content="/home OG.jpg" />
 </svelte:head>
 
 <div class="flex overflow-clip">
 	<div
-		class="flex h-screen w-full flex-col justify-between bg-stone-50 px-4 pt-4 sm:p-4 lg:w-3/5">
+		class="flex h-screen w-full flex-col justify-between bg-stone-50 px-4 pt-4 sm:p-4 lg:w-3/5"
+	>
 		<Home {about} on:click={() => (about = !about)} />
 		{#if about}
 			<About />

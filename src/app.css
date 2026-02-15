@@ -6,11 +6,16 @@ body {
 	@apply bg-stone-50;
 }
 
+#svelte {
+	display: contents;
+}
+
 @font-face {
 	font-family: 'timezone-italic';
 	src: url('/hal-fonts/hal-timezone-italic.otf') format('opentype');
 	font-style: italic;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -18,6 +23,7 @@ body {
 	src: url('/hal-fonts/hal-timezone-regular.otf') format('opentype');
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -25,21 +31,23 @@ body {
 	src: url('/hal-fonts/hal-timezone-monospace.otf') format('opentype');
 	font-style: monospace;
 	font-weight: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'sohn-buch';
 	src: url('/klim-fonts/sohne-buch.otf') format('opentype');
 	font-weight: normal;
+	font-display: swap;
 }
 
 @layer components {
 	.home-image {
-		@apply fixed right-0 top-0 -z-10 h-full w-2/5 object-cover object-bottom transition-opacity duration-100;
+		@apply fixed right-0 top-0 -z-10 h-full w-2/5 object-cover object-left-top transition-opacity duration-100;
 	}
 
 	.home-card {
-		@apply relative -mx-4 -mb-11 flex cursor-pointer justify-between border-t border-black bg-stone-50 px-2 pb-6 pt-3 transition-transform duration-500 ease-out hover:-translate-y-6 sm:hover:-translate-y-8;
+		@apply relative -mx-4 -mb-11 flex cursor-pointer justify-between border-t border-black bg-stone-50 px-2 pb-5 pt-1 transition-transform duration-500 ease-out hover:-translate-y-6 focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black sm:hover:-translate-y-8;
 	}
 
 	.layered-image {
@@ -47,6 +55,6 @@ body {
 	}
 
 	.org-button {
-		@apply rounded-full border border-black px-2 py-1 font-mono text-xs sm:text-sm;
+		@apply rounded-full border border-black px-2 py-1 font-mono text-[0.675rem] sm:text-[0.79rem];
 	}
 }

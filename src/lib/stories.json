@@ -1,6 +1,16 @@
 [
 	{
 		"publish": true,
+		"slug": "san-francisco-chronicle",
+		"title": "Applying for Asylum, Abudcted by ICE",
+		"org": "SF Chronicle",
+		"year": "2025",
+		"roles": "Reporter",
+		"description": [],
+		"works": []
+	},
+	{
+		"publish": true,
 		"slug": "radio-pacific",
 		"title": "Radio Pacific",
 		"org": "KALW",
@@ -9,68 +19,28 @@
 		"description": [],
 		"works": [
 			{
-				"title": "Rapid Response Hotline",
-				"date": "2025-05-06",
-				"description": "",
+				"title": "Episode 1: Rapid Response Hotline",
+				"date": "May 2025",
+				"description": "President Trump returned to power promising the largest deportation operation in American history. The episode puts the first months of that policy push in context and examines community-run Rapid Response Hotlines that monitor ICE activity and dispatch legal aid.",
 				"link": "https://radiopacific.co/"
 			},
 			{
-				"title": "Los Angeles and Fire",
-				"date": "2025-06-03",
-				"description": "",
+				"title": "Episode 2: Los Angeles and Fire",
+				"date": "June 2025",
+				"description": "After the January 7 fires across Los Angeles, this episode looks at California fire from two angles: the role of Indigenous fire stewardship in modern fire management and an audio portrait about growing up with Santa Ana winds.",
 				"link": "https://radiopacific.co/"
-			}
-		]
-	},
-	{
-		"publish": true,
-		"slug": "crosscurrents",
-		"title": "Crosscurrents",
-		"org": "KALW",
-		"year": "2025",
-		"roles": ["Reporter", "Producer"],
-		"description": [],
-		"works": [
-			{
-				"title": "Sanctuary Cities Past And Present",
-				"date": "2025-02-05",
-				"description": "The new administration has introduced the harshest immigration policies in decades. Today, we hear about the history of the Sanctuary movement, and how the Bay Area is responding to federal pressures.",
-				"link": "https://www.kalw.org/podcast/crosscurrents/2025-02-25/sanctuary-cities-past-and-present"
 			},
 			{
-				"title": "UC Berkeley and Divestment",
-				"date": "2024-06-06",
-				"description": "Over the last two months, universities around the country have been dealing with protests against the war in Gaza, and the Bay Area is no exception. One of the central demands is university divestment from Israel or having the endowment stop investing in any company that does business in, or with the country. In just the past few weeks, presidents at universities across California have said they would begin looking into divestment. Almost exactly four decades ago, UC Berkeley was at the heart of a different divestment movement, against Apartheid in South Africa.",
-				"link": "https://www.kalw.org/2024-06-06/uc-berkeley-and-divestment-remembering-the-student-encampment-against-apartheid"
-			}
-		]
-	},
-	{
-		"publish": true,
-		"slug": "oakland-north",
-		"title": "Oakland North",
-		"org": "Oakland North",
-		"year": "2025",
-		"roles": "Reporter",
-		"description": [],
-		"works": [
-			{
-				"title": "Protesters clash with feds at Coast Guard Island; Trump calls off Bay Area enforcement action",
-				"date": "2025-10-23",
-				"description": "Coverage of a protest at Coast Guard Island where federal enforcement clashes occurred. Mayor Barbara Lee emphasized Oakland's commitment as a welcoming city.",
-				"link": "https://oaklandnorth.net/2025/10/23/protesters-clash-with-border-patrol-at-coast-guard-island-as-trump-calls-off-bay-area-enforcement-action/"
+				"title": "Episode 3: A Home by Any Other Name",
+				"date": "July 2025",
+				"description": "A three-part look at homelessness and displacement across the Bay Area: an I-80 encampment in Berkeley, an RV community in San Francisco, and a group living on boats off the coast of Sausalito.",
+				"link": "https://radiopacific.co/"
 			},
 			{
-				"title": "Alameda Supervisors increase aid for immigrant legal services",
-				"date": "2025-10-15",
-				"description": "The Alameda County Board of Supervisors unanimously approved approximately $3.6 million in new funding for immigrant services.",
-				"link": "https://oaklandnorth.net/2025/10/15/alameda-supervisors-increase-aid-for-immigrant-legal-services/"
-			},
-			{
-				"title": "Protesters want ICE out of Oakland amid reports of seven people taken into custody",
-				"date": "2025-09-21",
-				"description": "Demonstration near an East Oakland intersection where federal immigration agents reportedly detained individuals.",
-				"link": "https://oaklandnorth.net/2025/09/21/protesters-want-ice-out-of-oakland-amid-reports-of-seven-people-taken-into-custody/"
+				"title": "Episode 4: MDMA & The Bay",
+				"date": "August 2025",
+				"description": "An exploration of MDMA's Bay Area roots, from early therapeutic use through federal scheduling and today's research debates, including the FDA's rejection of a recent MDMA-assisted therapy application.",
+				"link": "https://radiopacific.co/"
 			}
 		]
 	},
@@ -82,10 +52,48 @@
 		"year": "2025",
 		"roles": ["Producer"],
 		"description": [
-			"A six-part podcast exploring the origins of medical treatment for transgender young people, and how the care got pulled into a political fight that could end it in the United States."
+			"A six-part podcast exploring the story of medical treatment for transgender young people - how the care began, the lives it changed, and the legal and political fights that could end it in the United States.",
+			"On June 18, 2025, The Supreme Court upheld a Tennessee ban on transgender care for minors. That decision allows similar bans to continue in more than 20 other states.",
+			"And it comes as the Trump administration is targeting the care - threatening to go after the hospitals and doctors who continue to provide it around the country.",
+			"\"The Protocol\" is the story of this care - where it came from, who it was meant to help, and how legal and political fights in the U.S. came to endanger it."
 		],
 		"works": [
-			"https://www.nytimes.com/2025/06/02/podcasts/trans-gender-care-protocol.html"
+			{
+				"title": "Episode One: The Beginning",
+				"date": "",
+				"description": "The story of youth gender medicine starts in The Netherlands, with a clinical psychologist and a 16 year-old who was determined to go through life as the gender he long felt he was.",
+				"link": ""
+			},
+			{
+				"title": "Episode Two: The Gender Kids",
+				"date": "",
+				"description": "The new treatment is codified into a protocol, and the Dutch publish a landmark study that launches the field of youth gender medicine. A former patient describes the benefit of early treatment in a society that is still hostile to trans people.",
+				"link": ""
+			},
+			{
+				"title": "Episode Three: The American Approach",
+				"date": "",
+				"description": "In Boston, a psychologist helps set up the first youth gender clinic in the U.S., adapting the Dutch approach. Across the country, a rising star in the field questions their methods. Meanwhile, demand increases worldwide as the types of patients seeking care change.",
+				"link": ""
+			},
+			{
+				"title": "Episode Four: The Whistleblower",
+				"date": "",
+				"description": "A small Midwestern gender clinic gets consumed by a growing political fight when a whistleblower goes public. She had begun to see the treatments as harmful, and decided the political route was the only way to fix it.",
+				"link": ""
+			},
+			{
+				"title": "Episode Five: The Review",
+				"date": "",
+				"description": "The heated debate is not limited to the U.S. In England, a pediatrician tasked with figuring out how the country's health care system should provide the care finds that the evidence is \"remarkably weak.\" One major medical group argues that's missing the point - and repeating history.",
+				"link": ""
+			},
+			{
+				"title": "Episode Six: The Now",
+				"date": "",
+				"description": "State bans are enacted. The Supreme Court is poised to weigh in. President Trump declares that there are only two genders and threatens to withhold federal funds from hospitals that provide pediatric gender treatments. We hear from kids, parents and providers caught in the middle about the complicated decisions they are making.",
+				"link": ""
+			}
 		]
 	},
 	{
@@ -142,9 +150,40 @@
 		"year": "2021",
 		"roles": "Associate Producer",
 		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
+			"Before the podcast and the smartphone, there was the cassette tape and the Walkman - recordable, rewritable, spliceable, compact, and mobile tools that changed how people moved through the world and listened to voices speaking directly to them.",
+			"In five episodes from around the world, Mixtape explores how the cassette brought people together, pulled them apart, and reshaped culture in lasting ways."
+		],
+		"works": [
+			{
+				"title": "Mixtape: Dakou",
+				"date": "Oct 22, 2021",
+				"description": "In late-1990s China, damaged scraps of Western music known as dakou tapes helped transform the musical landscape. The episode follows the historians, critics, and musicians who reimagined rock and roll through those fragments.",
+				"link": ""
+			},
+			{
+				"title": "Mixtape: Jack and Bing",
+				"date": "Oct 29, 2021",
+				"description": "As Bing Crosby's influence started to fade, he turned to recording innovations rooted in wartime technology. The story traces how that shift changed media and audience habits for decades.",
+				"link": ""
+			},
+			{
+				"title": "Mixtape: The Wandering Soul",
+				"date": "Nov 5, 2021",
+				"description": "During the Vietnam War, U.S. military psychological operations weaponized a Vietnamese ghost story using tape-based audio tactics. The episode explores the campaign and the long afterlife of those sounds.",
+				"link": ""
+			},
+			{
+				"title": "Mixtape: Cassetternet",
+				"date": "Nov 12, 2021",
+				"description": "Experiments in the early 1980s explored broadcasting software over radio so listeners could record it on cassettes, creating analog information networks that disrupted institutions and foreshadowed modern social systems.",
+				"link": ""
+			},
+			{
+				"title": "Mixtape: Help?",
+				"date": "Nov 19, 2021",
+				"description": "A three-part finale: how cassettes fueled the self-help industry, how taped history traveled across Africa with Lost Boys, and how old mixtapes still carry emotional weight as personal artifacts.",
+				"link": ""
+			}
 		]
 	},
 	{
@@ -180,32 +219,6 @@
 		"org": "Freelance",
 		"year": "2020",
 		"roles": ["Reporter", "Photographer"],
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
-	},
-	{
-		"publish": true,
-		"slug": "bamazon-union",
-		"title": "Bamazon Union",
-		"org": "NPR",
-		"year": "2020",
-		"roles": ["Reporter", "Producer"],
-		"description": [
-			"Produced The New York Times's new daily news podcast, The Headlines",
-			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",
-			"Planned coverage with Times correspondents and editors from around the world"
-		]
-	},
-	{
-		"publish": true,
-		"slug": "forum",
-		"title": "Forum",
-		"org": "NPR",
-		"year": "2018",
-		"roles": "Associate Producer",
 		"description": [
 			"Produced The New York Times's new daily news podcast, The Headlines",
 			"Pitched, booked, interviewed, edited, scored, and mixed a one of three segments ever day",

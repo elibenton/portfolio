@@ -3,7 +3,8 @@
 </script>
 
 <div
-	class="text-md mb-2 px-2 leading-[1.3] *:my-4 sm:mb-12 sm:text-2xl sm:leading-8 lg:px-8">
+	class="text-md mb-2 px-2 leading-[1.3] *:my-4 sm:mb-12 sm:text-2xl sm:leading-8 lg:px-8"
+>
 	<p>
 		I am a freelance journalist and graduate student at the Berkeley School of
 		Journalism.
