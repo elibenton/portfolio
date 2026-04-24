@@ -1,7 +1,7 @@
 <script>
-	export let stories, hoveredTab;
+	export let stories, hoveredSlug;
 
-	$: activeStory = stories.find((story) => story.title === hoveredTab);
+	$: activeStory = stories.find((story) => story.slug === hoveredSlug);
 	$: activeSlug = activeStory?.slug ?? 'home';
 	$: activeAlt = activeStory
 		? `${activeStory.title} project image`

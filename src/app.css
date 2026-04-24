@@ -6,6 +6,10 @@ body {
 	@apply bg-stone-50;
 }
 
+#svelte:has(.home-page) {
+	font-size: 95%;
+}
+
 #svelte {
 	display: contents;
 }
@@ -51,7 +55,15 @@ body {
 	}
 
 	.layered-image {
-		@apply relative m-2 h-24 w-24 cursor-pointer self-center sm:h-36 sm:w-36 sm:self-start;
+		@apply relative m-2 flex flex-col items-center cursor-pointer self-center sm:items-start sm:self-start;
+	}
+
+	.eli-logo {
+		@apply relative block h-24 w-24 *:transition-transform *:duration-200 *:ease-in-out sm:h-36 sm:w-36;
+	}
+
+	.story-home-button {
+		@apply h-20 w-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black sm:h-24 sm:w-24;
 	}
 
 	.org-button {

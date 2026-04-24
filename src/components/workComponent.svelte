@@ -2,12 +2,10 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 
-	// import { fade } from 'svelte/transition';
+	export let stories, hoveredSlug;
 
-	export let stories, hoveredTab;
-
-	let filteredStores = stories.filter((stories) => stories.publish);
 	let enablePreviewInteractions = false;
+	let previewMediaQuery;
 
 	const colors = {
 		'New York Times': 'bg-yellow-200',
@@ -20,38 +18,38 @@
 	};
 
 	const updatePreviewMode = () => {
-		if (!browser) return;
-		enablePreviewInteractions = window.matchMedia(
-			'(hover: hover) and (pointer: fine)'
-		).matches;
-		if (!enablePreviewInteractions) hoveredTab = 'home';
+		enablePreviewInteractions = previewMediaQuery?.matches ?? false;
+		if (!enablePreviewInteractions) hoveredSlug = 'home';
 	};
 
-	const showPreview = (title) => {
+	const showPreview = (slug) => {
 		if (!enablePreviewInteractions) return;
-		hoveredTab = title;
+		hoveredSlug = slug;
 	};
 
 	const clearPreview = () => {
 		if (!enablePreviewInteractions) return;
-		hoveredTab = 'home';
+		hoveredSlug = 'home';
 	};
 
 	onMount(() => {
+		if (!browser) return;
+		previewMediaQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
 		updatePreviewMode();
-		window.addEventListener('resize', updatePreviewMode);
-		return () => window.removeEventListener('resize', updatePreviewMode);
+		previewMediaQuery.addEventListener('change', updatePreviewMode);
+		return () =>
+			previewMediaQuery.removeEventListener('change', updatePreviewMode);
 	});
 </script>
 
 <div class="sm:translate-y-4">
-	{#each filteredStores as { title, roles, year, org, slug }}
+	{#each stories as { title, roles, year, org, slug }}
 		<a
 			href={slug}
 			class="home-card group"
-			on:mouseenter={() => showPreview(title)}
+			on:mouseenter={() => showPreview(slug)}
 			on:mouseleave={clearPreview}
-			on:focus={() => showPreview(title)}
+			on:focus={() => showPreview(slug)}
 			on:blur={clearPreview}
 		>
 			<div>
@@ -65,7 +63,7 @@
 				</span>
 			</div>
 			<div class="shrink-0">
-				{#if hoveredTab === title}
+				{#if hoveredSlug === slug}
 					<p class="text-[0.9rem]">Click for more →</p>
 				{:else}
 					<span class={`${colors[org]} org-button`}>
