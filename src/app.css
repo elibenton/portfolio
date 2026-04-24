@@ -47,7 +47,11 @@ body {
 
 @layer components {
 	.home-image {
-		@apply fixed right-0 top-0 -z-10 h-full w-2/5 object-cover object-left-top transition-opacity duration-100;
+		@apply h-full w-full object-cover object-center transition-opacity duration-100;
+	}
+
+	.home-image-rail {
+		@apply fixed right-0 top-0 h-screen w-2/5 overflow-hidden;
 	}
 
 	.home-card {
@@ -55,7 +59,7 @@ body {
 	}
 
 	.layered-image {
-		@apply relative m-2 flex flex-col items-center cursor-pointer self-center sm:items-start sm:self-start;
+		@apply relative m-2 flex flex-col items-center cursor-pointer self-center sm:self-start;
 	}
 
 	.eli-logo {

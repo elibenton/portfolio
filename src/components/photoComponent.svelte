@@ -8,7 +8,7 @@
 		: 'Eli Cohen in desert';
 </script>
 
-<div class="hidden border-l border-black md:block">
+<div class="home-image-rail hidden border-l border-black md:block">
 	<img
 		class="home-image"
 		src={`/home-photos/${activeSlug}.webp`}
