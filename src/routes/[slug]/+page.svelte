@@ -42,29 +42,25 @@
 	<meta
 		name="description"
 		content={descriptionItems[0] ||
-			`${title} — reporting and production by Eli Benton Cohen.`}
-	/>
+			`${title} — reporting and production by Eli Benton Cohen.`} />
 </svelte:head>
 
 <div class="flex overflow-clip">
 	<div
-		class="flex h-screen w-full flex-col overflow-y-auto bg-stone-50 px-4 pb-16 pt-4 sm:px-6 sm:pb-20 lg:w-3/5 lg:px-8"
-	>
+		class="flex h-screen w-full flex-col overflow-y-auto bg-stone-50 px-4 pb-16 pt-4 sm:px-6 sm:pb-20 lg:w-3/5 lg:px-8">
 		<header class="mb-8 pt-5 sm:mb-10 sm:pt-6">
 			<div class="mb-8 flex items-start justify-between gap-6">
-				<div class="layered-image -ml-1 -mt-3">
+				<div class="layered-image -ml-2 -mt-4">
 					<EliLogo href="/" label="Back home" />
 				</div>
 			</div>
 
 			<h1
-				class="max-w-3xl font-sohn text-3xl font-medium leading-tight sm:text-4xl md:text-5xl"
-			>
+				class="max-w-3xl font-sohn text-3xl font-medium leading-tight sm:text-4xl md:text-5xl">
 				{title}
 			</h1>
 			<p
-				class="mt-3 flex items-baseline gap-3 font-sohn text-lg leading-tight text-black sm:text-xl"
-			>
+				class="mt-3 flex items-baseline gap-3 font-sohn text-lg leading-tight text-black sm:text-xl">
 				<span>{org}</span>
 				<span aria-hidden="true">&bull;</span>
 				<span>{year}</span>
@@ -103,8 +99,7 @@
 									href={work.link}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="font-sohn text-xl underline sm:text-2xl"
-								>
+									class="font-sohn text-xl underline sm:text-2xl">
 									{work.title}
 								</a>
 							{:else}
@@ -132,7 +127,6 @@
 			alt={`${title} project image`}
 			decoding="async"
 			loading="eager"
-			on:error={() => (imageSrc = '/home-photos/home.webp')}
-		/>
+			on:error={() => (imageSrc = '/home-photos/home.webp')} />
 	</div>
 </div>
