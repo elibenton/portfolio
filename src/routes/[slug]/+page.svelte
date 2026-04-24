@@ -52,18 +52,8 @@
 	>
 		<header class="mb-8 pt-5 sm:mb-10 sm:pt-6">
 			<div class="mb-8 flex items-start justify-between gap-6">
-				<div>
-					<EliLogo href="/" label="Back home" className="story-home-button" />
-				</div>
-				<div class="max-w-xl pt-2 text-right">
-					<p
-						class="font-mono text-xs uppercase tracking-[0.18em] text-black/70 sm:text-sm"
-					>
-						{org}
-					</p>
-					<p class="mt-1 font-mono text-xs text-black/70 sm:text-sm">
-						{year} &bull; {byline}
-					</p>
+				<div class="layered-image -ml-1 -mt-3">
+					<EliLogo href="/" label="Back home" />
 				</div>
 			</div>
 
@@ -72,6 +62,15 @@
 			>
 				{title}
 			</h1>
+			<p
+				class="mt-3 flex items-baseline gap-3 font-sohn text-lg leading-tight text-black sm:text-xl"
+			>
+				<span>{org}</span>
+				<span aria-hidden="true">&bull;</span>
+				<span>{year}</span>
+				<span aria-hidden="true">&bull;</span>
+				<span>{byline}</span>
+			</p>
 		</header>
 
 		<article class="max-w-2xl space-y-5 text-base leading-relaxed sm:text-lg">
@@ -126,7 +125,7 @@
 		{/if}
 	</div>
 
-	<div class="hidden border-l border-black md:block">
+	<div class="home-image-rail hidden border-l border-black md:block">
 		<img
 			class="home-image"
 			src={imageSrc}

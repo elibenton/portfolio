@@ -1,5 +1,6 @@
 <script>
 	import { browser } from '$app/environment';
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 
 	export let stories, hoveredSlug;
@@ -43,9 +44,9 @@
 </script>
 
 <div class="sm:translate-y-4">
-	{#each stories as { title, roles, year, org, slug }}
+	{#each stories as { title, roles, year, org, slug } (slug)}
 		<a
-			href={slug}
+			href={resolve('/[slug]', { slug })}
 			class="home-card group"
 			on:mouseenter={() => showPreview(slug)}
 			on:mouseleave={clearPreview}
