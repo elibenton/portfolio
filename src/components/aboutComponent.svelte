@@ -12,7 +12,7 @@
 	<p>
 		Currently, I'm the host of <a
 			class="underline"
-			href="https://radiopacific.co/">Radio Pacific</a
+			href="https://radiopacific.org/">Radio Pacific</a
 		>, a new show about California from KALW. I've produced audio storytelling
 		of every kind: daily news, narrative series, long-form investigations, and
 		live talk shows.
