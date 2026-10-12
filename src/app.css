@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+	--font-sohn: sohn-buch, ui-sans-serif;
+
+	--transition-property-spacing: margin, padding;
+	--transition-property-visibility: hidden, visible, invisible;
+
+	--animate-rotate: rotate 20s linear infinite;
+
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}
 
 body {
 	@apply bg-stone-50;
@@ -15,32 +31,8 @@ body {
 }
 
 @font-face {
-	font-family: 'timezone-italic';
-	src: url('/hal-fonts/hal-timezone-italic.otf') format('opentype');
-	font-style: italic;
-	font-weight: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'timezone-regular';
-	src: url('/hal-fonts/hal-timezone-regular.otf') format('opentype');
-	font-style: normal;
-	font-weight: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'timezone-monospace';
-	src: url('/hal-fonts/hal-timezone-monospace.otf') format('opentype');
-	font-style: monospace;
-	font-weight: normal;
-	font-display: swap;
-}
-
-@font-face {
 	font-family: 'sohn-buch';
-	src: url('/klim-fonts/sohne-buch.otf') format('opentype');
+	src: url('/klim-fonts/sohne-buch.woff2') format('woff2');
 	font-weight: normal;
 	font-display: swap;
 }
@@ -51,15 +43,15 @@ body {
 	}
 
 	.home-image-rail {
-		@apply fixed right-0 top-0 h-screen w-2/5 overflow-hidden;
+		@apply fixed top-0 right-0 h-screen w-2/5 overflow-hidden;
 	}
 
 	.home-card {
-		@apply relative -mx-4 mb-0 flex cursor-pointer justify-between border-t border-black bg-stone-50 p-2 transition-transform duration-500 ease-out focus-visible:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black sm:-mb-11 sm:px-2 sm:pb-5 sm:hover:-translate-y-8;
+		@apply relative -mx-4 mb-0 flex cursor-pointer justify-between border-t border-black bg-stone-50 p-2 transition-transform duration-500 ease-out focus-visible:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black focus-visible:outline-solid sm:-mb-11 sm:px-2 sm:pb-5 sm:hover:-translate-y-8;
 	}
 
 	.layered-image {
-		@apply relative m-2 flex flex-col items-center cursor-pointer self-center sm:self-start;
+		@apply relative m-2 flex cursor-pointer flex-col items-center self-center sm:self-start;
 	}
 
 	.eli-logo {
@@ -67,10 +59,10 @@ body {
 	}
 
 	.story-home-button {
-		@apply h-20 w-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black sm:h-24 sm:w-24;
+		@apply h-20 w-20 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black focus-visible:outline-solid sm:h-24 sm:w-24;
 	}
 
 	.org-button {
-		@apply rounded-full border border-black px-2 py-1 font-mono text-[0.675rem] sm:text-[0.79rem];
+		@apply rounded-full border border-black px-2 py-1 font-mono text-xs sm:text-[0.79rem];
 	}
 }

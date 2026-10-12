@@ -1,7 +1,5 @@
 <script>
-	export let href = null;
-	export let label = 'Home';
-	export let className = '';
+	let { href = null, label = 'Home', className = '' } = $props();
 </script>
 
 <svelte:element
@@ -13,16 +11,22 @@
 	<img
 		src="/E.webp"
 		alt=""
-		class="absolute left-0 top-0 group-hover:-translate-y-1 group-hover:-rotate-6"
+		width="288"
+		height="244"
+		class="absolute top-0 left-0 group-hover:-translate-y-1 group-hover:-rotate-6"
 	/>
 	<img
 		src="/L.webp"
 		alt=""
-		class="absolute left-0 top-0 group-hover:-translate-y-2 group-hover:rotate-2"
+		width="288"
+		height="244"
+		class="absolute top-0 left-0 group-hover:-translate-y-2 group-hover:rotate-2"
 	/>
 	<img
 		src="/I.webp"
 		alt=""
-		class="absolute left-0 top-0 group-hover:translate-y-0.5 group-hover:rotate-6"
+		width="288"
+		height="244"
+		class="absolute top-0 left-0 group-hover:translate-y-0.5 group-hover:rotate-6"
 	/>
 </svelte:element>

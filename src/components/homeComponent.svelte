@@ -1,13 +1,13 @@
 <script>
 	import EliLogo from './eliLogo.svelte';
 
-	export let about;
+	let { about, onclick } = $props();
 </script>
 
-<button on:click class="layered-image">
+<button {onclick} class="layered-image" aria-label="About" aria-pressed={about}>
 	<EliLogo />
 	<div class="mt-2 flex flex-row justify-center space-x-3 sm:mt-3">
-		<p class={`${!about && 'font-bold'}`}>work</p>
-		<p class={`${about && 'font-bold'}`}>about</p>
+		<p class={{ 'font-bold': !about }}>work</p>
+		<p class={{ 'font-bold': about }}>about</p>
 	</div>
 </button>
