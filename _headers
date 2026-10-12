@@ -1,5 +1,21 @@
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
 /home-photos/*
   Cache-Control: public, max-age=31536000, immutable
 
-/*.webp
+/E.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/L.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/I.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/klim-fonts/*
   Cache-Control: public, max-age=31536000, immutable
