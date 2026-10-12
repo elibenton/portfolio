@@ -1,13 +1,15 @@
 <script>
-	import { publishedStories } from '$lib/stories';
+	import { publishedStories } from '#lib/stories.js';
 
 	import Photos from '../components/photoComponent.svelte';
 	import Works from '../components/workComponent.svelte';
 	import About from '../components/aboutComponent.svelte';
 	import Home from '../components/homeComponent.svelte';
 
-	let hoveredSlug = 'home';
-	let about = false;
+	let { data } = $props();
+
+	let hoveredSlug = $state('home');
+	let about = $state(false);
 </script>
 
 <svelte:head>
@@ -16,24 +18,14 @@
 		as="image"
 		type="image/webp"
 		href="/home-photos/home.webp"
-	/>
-	<link
-		rel="preload"
-		as="image"
-		type="image/webp"
-		href="/home-photos/san-francisco-chronicle.webp"
-	/>
-	<link
-		rel="preload"
-		as="image"
-		type="image/webp"
-		href="/home-photos/radio-pacific.webp"
+		media="(min-width: 768px)"
+		fetchpriority="high"
 	/>
 
 	<title>Eli Benton Cohen | Freelance Journalist</title>
 	<meta
 		name="description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+		content="Eli Benton Cohen is an audio producer, reporter, and photographer."
 	/>
 	<meta
 		name="tags"
@@ -48,9 +40,11 @@
 	<meta property="og:title" content="Eli Benton Cohen | Freelance Journalist" />
 	<meta
 		property="og:description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+		content="Eli Benton Cohen is an audio producer, reporter, and photographer."
 	/>
-	<meta property="og:image" content="/home OG.jpg" />
+	<meta property="og:image" content="https://eli.fm/og-home.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -62,21 +56,22 @@
 	/>
 	<meta
 		name="twitter:description"
-		content="Eli Benton Cohen is a audio producer, reporter, and photographer."
+		content="Eli Benton Cohen is an audio producer, reporter, and photographer."
 	/>
-	<meta name="twitter:image" content="/home OG.jpg" />
+	<meta name="twitter:image" content="https://eli.fm/og-home.jpg" />
 </svelte:head>
 
-<div class="home-page flex overflow-clip">
+<main class="home-page flex overflow-clip">
+	<h1 class="sr-only">Eli Benton Cohen, freelance journalist</h1>
 	<div
 		class="flex h-screen w-full flex-col justify-between bg-stone-50 px-4 pt-4 sm:p-4 lg:w-3/5"
 	>
-		<Home {about} on:click={() => (about = !about)} />
+		<Home {about} onclick={() => (about = !about)} />
 		{#if about}
 			<About />
 		{:else}
 			<Works stories={publishedStories} bind:hoveredSlug />
 		{/if}
 	</div>
-	<Photos stories={publishedStories} {hoveredSlug} />
-</div>
+	<Photos stories={publishedStories} {hoveredSlug} photos={data.photos} />
+</main>
