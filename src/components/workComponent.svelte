@@ -1,9 +1,9 @@
 <script>
-	import { browser } from '$app/environment';
+	import { browser } from '$app/env';
 	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 
-	export let stories, hoveredSlug;
+	let { stories, hoveredSlug = $bindable() } = $props();
 
 	let enablePreviewInteractions = false;
 	let previewMediaQuery;
@@ -12,10 +12,10 @@
 		'New York Times': 'bg-yellow-200',
 		Radiolab: 'bg-red-200',
 		'The New Yorker': 'bg-green-200',
-		Freelance: 'bg-orange-200',
 		'SF Chronicle': 'bg-purple-200',
 		NPR: 'bg-purple-200',
-		KALW: 'bg-blue-200'
+		KALW: 'bg-blue-200',
+		'SF Standard': 'bg-orange-200'
 	};
 
 	const updatePreviewMode = () => {
@@ -48,10 +48,10 @@
 		<a
 			href={resolve('/[slug]', { slug })}
 			class="home-card group"
-			on:mouseenter={() => showPreview(slug)}
-			on:mouseleave={clearPreview}
-			on:focus={() => showPreview(slug)}
-			on:blur={clearPreview}
+			onmouseenter={() => showPreview(slug)}
+			onmouseleave={clearPreview}
+			onfocus={() => showPreview(slug)}
+			onblur={clearPreview}
 		>
 			<div>
 				<h2

@@ -1,6 +1,25 @@
 [
 	{
 		"publish": true,
+		"slug": "mad-props",
+		"title": "Mad Props",
+		"org": "SF Standard",
+		"year": "2026",
+		"roles": "Reporter",
+		"description": [
+			"A nonpartisan San Francisco Standard voter guide to the 2026 San Francisco and California elections, with plain-English breakdowns of the races and propositions on the ballot."
+		],
+		"works": [
+			{
+				"title": "Mad Props",
+				"date": "2026",
+				"description": "The San Francisco Standard's 2026 voter guide to San Francisco and California races and propositions.",
+				"link": "https://sfstandard.com/2026-election-voter-guide/"
+			}
+		]
+	},
+	{
+		"publish": true,
 		"slug": "san-francisco-chronicle",
 		"title": "Abducted by ICE",
 		"org": "SF Chronicle",
@@ -214,7 +233,7 @@
 		]
 	},
 	{
-		"publish": true,
+		"publish": false,
 		"slug": "mars-college",
 		"title": "Mars College",
 		"org": "Freelance",
@@ -233,7 +252,7 @@
 		]
 	},
 	{
-		"publish": true,
+		"publish": false,
 		"slug": "watson-fellowship",
 		"title": "Watson Fellowship",
 		"org": "Freelance",
